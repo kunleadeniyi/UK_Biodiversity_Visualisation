@@ -25,8 +25,8 @@ theme_set(theme_void(base_family = 'Avenir'))
 
 #library(dplyr)
 # plot image in the graphics device
-  dragonfly_image <- image_read("/Users/ayokunle/Documents/Advanced Visualisation/project_2/data/Aeshna_caerulea.jpg")
-  dragonfly_image_lateral <- image_read("/Users/ayokunle/Documents/Advanced Visualisation/project_2/data/Aeshna_caerulea_lateral_flipped_orig.png")
+  dragonfly_image <- image_read("data/Aeshna_caerulea.jpg")
+  dragonfly_image_lateral <- image_read("data/Aeshna_caerulea_lateral_flipped_orig.png")
 
   # and extract useful quantities such as the height and width 
   info_dragonfly_image <- image_info(dragonfly_image)
@@ -38,7 +38,7 @@ theme_set(theme_void(base_family = 'Avenir'))
     #image_plot <- plot( dragonfly_image )
   
 # read nbn data for azure hawker species (Aeshna caerulea)
-  nbn_aeshna_caerulea <- read.csv('/Users/ayokunle/Documents/Advanced Visualisation/project_2/data/aeshna caerulea azure hawker dragonfly/records.csv')
+  nbn_aeshna_caerulea <- read.csv('data/aeshna caerulea azure hawker dragonfly/records.csv')
   
   # 2015 sample
   #nbn_2015 <- nbn_aeshna_caerulea[nbn_aeshna_caerulea$Start.date.year == 2015, ]
